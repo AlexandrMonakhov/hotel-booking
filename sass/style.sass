@@ -22,10 +22,37 @@ body
     padding-top: 39px
     padding-bottom: 41px
   &-menu
-    display: flex
-    justify-content: space-between
+    background-color: #0A223D
+    padding: 31px 0px
+    &-wrapper
+      display: flex
+      justify-content: space-between
     &__link
+      font-weight: 700
+      color: #ffffff
+      text-transform: uppercase
       text-decoration: none
+.search-form
+  display: flex
+  align-items: center
+  flex-grow: 1;
+  padding-left: 10.8%;
+  padding-right: 30.8%;
+  &__input
+    padding-top: 12px
+    padding-bottom: 13px
+    padding-left: 23px
+    flex-basis: 80%
+    border: none
+    &::placeholder
+      font-family: 'Mulish', sans-serif
+      color: #333333
+  &__button
+    background-color: #EC1F46
+    padding: 12px 25px
+    flex-basis: 20%
+    border: none
+    border-radius: 0px 6px 6px 0px
 .user
   display: flex
   align-items: center

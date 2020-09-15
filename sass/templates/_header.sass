@@ -1,0 +1,49 @@
+/* Header */
+.header
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 39px
+    padding-bottom: 41px
+  &-menu
+    background-color: #0A223D
+    padding: 31px 0px
+    &-wrapper
+      display: flex
+      justify-content: space-between
+    &__link
+      font-weight: 700
+      color: #ffffff
+      text-transform: uppercase
+      text-decoration: none
+  &__search
+    margin-right: auto
+    margin-left: 108px
+.search-form
+  display: flex
+  align-items: center
+  &__input
+    width: 350px
+    padding: 12px 15px 13px 23px
+    border: none
+    &::placeholder
+      font-family: 'Mulish', sans-serif
+      color: $text-color
+  &__button
+    background-color: $primary
+    padding: 12px 26px
+    border: none
+    border-radius: 0px 6px 6px 0px
+.user
+  display: flex
+  align-items: center
+  text-decoration: none
+  color: $text-color
+  &__avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover
+  &__name
+    margin-left: 18px

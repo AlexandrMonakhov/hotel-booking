@@ -15,6 +15,19 @@
     <link rel="stylesheet" href="./css/style.min.css" />
     <script src="./js/swiper-bundle.min.js" defer></script>
     <script src="./js/index.js" defer></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=dd827acf-6d16-40ff-8123-746827c2338c&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [55.76, 37.64],
+          zoom: 7,
+        });
+      }
+    </script>
     <title>Best Tour Plan | Hotel Booking</title>
   </head>
   <body>
@@ -119,42 +132,42 @@
           <!-- /.rating hotel-info__rating -->
         </div>
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel__slider">
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/728/450"
+                    src="https://picsum.photos/728/470"
                     alt="slider-image"
-                    class="slider__image"
+                    class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/727/450"
+                    src="https://picsum.photos/727/470"
                     alt="slider-image"
-                    class="slider__image"
+                    class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/729/450"
+                    src="https://picsum.photos/729/470"
                     alt="slider-image"
-                    class="slider__image"
+                    class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/728/451"
+                    src="https://picsum.photos/728/471"
                     alt="slider-image"
-                    class="slider__image"
+                    class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="https://picsum.photos/728/449"
                     alt="slider-image"
-                    class="slider__image"
+                    class="swiper-slide__image"
                   />
                 </div>
               </div>
@@ -164,6 +177,49 @@
             </div>
           </div>
           <!-- /.slider -->
+          <div class="hotel-about">
+            <div class="booking">
+              <div class="booking__info">
+                <div class="booking__price">
+                  <span class="booking__start">price starts as</span>
+                  <strong class="booking__pricetag">$ 8,500</strong>
+                  <span class="booking__per-room">per room / night</span>
+                </div>
+                <!-- /.booking__price -->
+                <div class="booking__room">
+                  <div class="booking__text">
+                    <img
+                      src="./img/user.svg"
+                      alt="Icon: user"
+                      class="booking__icon"
+                    />
+                    <span class="booking__description">2 x Guests</span>
+                  </div>
+                  <div class="booking__text">
+                    <img
+                      src="./img/home.svg"
+                      alt="Icon: home"
+                      class="booking__icon"
+                    />
+                    <span class="booking__description">1 x Room</span>
+                  </div>
+                </div>
+                <!-- /.booking__room -->
+              </div>
+              <div class="booking__call-center">
+                <span class="booking__heading">Quick booking</span>
+                <a href="tel:12100" class="booking__phone">
+                  <img src="./img/phone.svg" alt="Icon: phone" />
+                  <span class="booking__number">12100</span>
+                </a>
+              </div>
+              <!-- /.booking__call-center -->
+              <button class="button booking__button">View Other Options</button>
+            </div>
+            <!-- /.booking -->
+            <div id="map" class="map"></div>
+            <!-- /.map -->
+          </div>
         </div>
         <!-- /.hotel-grid -->
       </div>

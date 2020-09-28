@@ -1,4 +1,4 @@
-let swiper = new Swiper('.swiper-container', {
+let gallery = new Swiper('.gallery', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -8,5 +8,18 @@ let swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.slider-button__next',
     prevEl: '.slider-button__prev',
+  },
+});
+
+let reviews = new Swiper('.reviews-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: '.reviews-slider__button_next',
+    prevEl: '.reviews-slider__button_prev',
   },
 });

@@ -9,6 +9,9 @@
         height: 100%
         width: 100%
         object-fit: cover
+  .package
+    &-wrapper
+      grid-template-columns: repeat(3, 300px)
   .card
     width: 220px
     height: 220px
@@ -46,6 +49,12 @@
     &-slider
         &__item
           max-width: 580px
+  .package
+    &__title
+      margin-bottom: 45px
+    &-wrapper
+      grid-template-columns: repeat(2, 340px)
+      gap: 20px
   .activities
     &__card-wrapper
       flex-wrap: wrap
@@ -110,6 +119,15 @@
       width: 92%
       flex-direction: column
       align-items: flex-start
+  .package
+    &-wrapper
+      grid-template-rows: auto
+      grid-template-columns: 1fr
+      column-gap: 0
+    &-card
+      &_big
+        grid-template-rows: 250px 1fr
+        grid-template-columns: 100%
   .reviews
     &__title
       font-size: 30px
@@ -146,6 +164,12 @@
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
+  .package
+    padding: 20px 0 45px 
+    &__title
+      font-size: 25px
+      line-height: 35px
+      margin-bottom: 30px
   .subscribe 
     width: 100%
   .reviews

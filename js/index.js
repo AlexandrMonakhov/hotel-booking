@@ -23,3 +23,10 @@ let reviews = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button_prev',
   },
 });
+
+const menuButton = document.querySelector('.menu-button'),
+  navbarMenu = document.querySelector('.navbar-menu');
+
+menuButton.addEventListener('click', () => {
+  navbarMenu.classList.toggle('navbar-menu_active');
+});

@@ -15,6 +15,15 @@
   .card
     width: 220px
     height: 220px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__copyrait
+      margin-left: 80px
+    &__title
+      font-size: 15px
+    &__item
+      font-size: 13px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -65,13 +74,99 @@
   .card
     &__title
       max-width: 200px
+  .footer
+    padding-top: 80px
+    padding-bottom: 40px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 48%
+    &__logo
+      &_wrapper
+        grid-row: 1 / 2
+        grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: 3 / 7
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__bottom
+      grid-column: 1 / 7
+      margin-top: 5px
+    &__copyrait
+      margin: 0
+    &__link
+      &_wrapper
+        max-width: 100%
 @media (max-width: 768px)
+  body 
+    padding-top: 78px
   .container
     max-width: 576px
     width: 90%
   .navbar
-    &__search, &-menu, &__user
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
+    &__search, &__user
+      &-mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex   
+    &__user
+      &-mobile
+        &_visible
+          display: flex
+          flex-direction: column
+          margin-left: 0
+          margin-top: 10px
+          color: $light
+          margin-bottom: 27px
+    &__search
+      &-mobile
+        &_visible
+          margin-bottom: 39px
+          max-width: 290px
+    &-menu
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 63px
+      padding-top: 30px
+      &__link
+        margin-bottom: 20px
+      &__item
+        display: block
+      &-wrapper
+        align-items: center
+        flex-direction: column
+      &_active
+        overflow-y: auto
+        display: block
   .menu
     &-button
       width: 16px
@@ -155,6 +250,13 @@
       line-height: 23px
       margin-top: 0
       margin-bottom: 36px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &__input
+      flex-basis: 100%
+    &__logo
+      width: 104px
 @media (max-width: 576px)
   .logo__image
     width: 99px
@@ -179,3 +281,107 @@
   .activities
     &__card
       width: 100%
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      width: 104px
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1 / 7
+      &-form
+        grid-row: 7
+        grid-column: 1 / 7
+    &__bottom
+      flex-direction: column
+      align-items: start
+      grid-row: 8 / 9
+    &__form
+      display: flex
+    &__message
+      width: 100%
+      height: 123px
+      margin-bottom: 15px
+    &__title
+      &_mb-3
+        margin-bottom: 15px
+    &__box
+      display: flex
+      flex-direction: column
+      align-items: start
+    &__button
+      order: 2
+    &__info
+      margin-bottom: 15px
+      order: 1
+    &__copyrait
+      margin-bottom: 10px
+@media (max-width: 480px)
+  .footer
+    &__social
+      &-network
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+      &-links
+        margin-top: 22px
+    &__title
+      &_inline
+        flex: 0 1 100%
+@media (max-width: 350px)
+  .footer
+    &__contact
+      &-details
+      &-form
+        grid-row: 7
+        grid-column: 1 / 7
+@media (max-width: 320px)
+  .footer
+    &-wrapper
+      grid-gap: 10px
+    &__contact
+      &-details
+      &-form
+        grid-row: 7
+        grid-column: 1 / 7
+    &__copyrait
+      width: 290px
+      margin-top: 30px
+    &__button
+      margin-top: 15px
+    &__info
+      margin: 0
+    &__additional
+      margin-top: 30px
+    &__categories
+      margin-top: 30px
+    &__social
+      &-links
+        margin-top: 20px
+      &-network
+        margin-top: 30px
+    &__legal
+      margin-top: 30px
+    &__contact
+      &-details
+        margin-top: 40px
+      &-form
+        margin-top: 60px

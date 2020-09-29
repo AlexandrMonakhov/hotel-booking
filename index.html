@@ -31,7 +31,7 @@
     <title>Best Tour Plan | Hotel Booking</title>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="/" class="logo">
@@ -42,7 +42,10 @@
             />
           </a>
 
-          <form action="#" class="search-form navbar__search">
+          <form
+            action="#"
+            class="search-form navbar__search navbar__search-mobile_hidden"
+          >
             <input
               type="text"
               class="search-form__input"
@@ -53,7 +56,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user-mobile_hidden">
             <img
               src="./img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -75,6 +78,32 @@
       <nav class="navbar-menu">
         <div class="container">
           <ul class="navbar-menu-wrapper">
+            <li class="navbar-menu__item">
+              <a href="#" class="user navbar__user navbar__user-mobile_visible">
+                <img
+                  src="./img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name_light">Nathan</span>
+              </a>
+              <!-- /.user -->
+            </li>
+            <li class="navbar-menu__item">
+              <form
+                action="#"
+                class="search-form navbar__search navbar__search-mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search-form__input"
+                  placeholder="Search Location"
+                />
+                <button class="search-form__button">
+                  <img src="./img/search-icon.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <a href="#" class="navbar-menu__link">All Deals</a>
             <a href="#" class="navbar-menu__link">Hotels</a>
             <a href="#" class="navbar-menu__link">Activities</a>
@@ -234,9 +263,9 @@
             class="package-card__image-wrapper package-card__image-wrapper_big"
             style="background-image: url('img/package-1.jpg')"
           >
-            <span class="offer package-card__offer package-card__offer_big"
-              >Flash Offer</span
-            >
+            <span class="offer package-card__offer package-card__offer_big">
+              Flash Offer
+            </span>
           </div>
           <!-- /.package-card__image-wrapper -->
           <div
@@ -731,5 +760,230 @@
       <!-- /.container -->
     </section>
     <!-- /.activities -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <a href="/" class="footer__logo_wrapper">
+            <img
+              src="./img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+            />
+          </a>
+          <div class="footer__list footer__categories">
+            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">All Deals </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Hotels</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Activities</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Spa Packages </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Hotel Day Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Restaurants</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Fitness</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Rodrigues</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__list -->
+          <div class="footer__list footer__additional">
+            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">How does it work? </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Frequently Asked Questions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Deals.mu loyalty program </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  >Promote your Business on BTP</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__list -->
+          <div class="footer__social-network">
+            <h3 class="footer__title footer__title_inline">Social Network</h3>
+            <div class="footer__social-links">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="footer__link_hover"
+                  src="./img/fb.svg"
+                  alt="Icon: facebook"
+              /></a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="footer__link_hover"
+                  src="./img/yt.svg"
+                  alt="Icon: youtube"
+              /></a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="footer__link_hover"
+                  src="./img/inst.svg"
+                  alt="Icon: instagram"
+              /></a>
+            </div>
+            <!-- /.footer__social-links -->
+          </div>
+          <!-- /.footer__social-network -->
+          <div class="footer__list footer__legal">
+            <h3 class="footer__title">LEGAL INFORMATION</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms & Conditions </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Disclaimer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cancellation policy </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__list -->
+          <div class="footer__contact-details">
+            <h3 class="footer__title footer__title_mb-3">Contact Details</h3>
+            <p class="footer__text">
+              Feel free to contact us by phone, email or by our contact form
+            </p>
+            <ul class="footer__ul">
+              <li class="footer__item footer__item_mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/footer-map-point.svg"
+                    alt="Icon: map-marker"
+                  />
+                </div>
+                <a href="#" class="footer__link"
+                  >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States</a
+                >
+              </li>
+
+              <li class="footer__item footer__item_mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/footer-phone.svg"
+                    alt="Icon: contact-phone-call"
+                  />
+                </div>
+                <div class="footer__link_wrapper">
+                  <a href="#" class="footer__link"
+                    >Tel (business hours) : 269 1500</a
+                  >
+                  <a href="#" class="footer__link"
+                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm)</a
+                  >
+
+                  <a href="#" class="footer__link"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
+                </div>
+              </li>
+
+              <li class="footer__item footer__item_mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/footer-email.svg"
+                    alt="Icon: email"
+                  />
+                </div>
+                <a href="#" class="footer__link">cherly.lawson@example.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__contact-details -->
+          <div class="footer__contact-form">
+            <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
+            <form action="#" class="footer__form">
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Your Full Name*"
+              />
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Phone Number*"
+              />
+              <textarea
+                class="footer__message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <div class="footer__box">
+                <button class="button footer__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
+            </form>
+          </div>
+          <!-- /.footer__contact-form -->
+          <div class="footer__bottom">
+            <div class="footer__copyrait">
+              <a href="#" class="footer__text footer__text_bottom">
+                Disclaimer
+              </a>
+              <a href="#" class="footer__text footer__text_bottom">
+                Conditions of use
+              </a>
+              <a href="#" class="footer__text footer__text_bottom">
+                Cancellation policy
+              </a>
+            </div>
+            <div class="footer__payment">
+              <img src="./img/payment.png" alt="Icons: payment" />
+            </div>
+          </div>
+          <!-- /.footer__bottom -->
+        </div>
+        <!-- /.footer-wrapper -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
   </body>
 </html>

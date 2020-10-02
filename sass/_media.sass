@@ -115,6 +115,13 @@
     &__link
       &_wrapper
         max-width: 100%
+  .modal
+    &__box
+      flex-direction: column
+    &__info
+      margin-top: 10px
+    &-dialog
+      padding: 33px 50px
 @media (max-width: 768px)
   body 
     padding-top: 78px
@@ -257,7 +264,10 @@
     &__input
       flex-basis: 100%
     &__logo
-      width: 104px
+      width: 104px 
+  .modal
+    &-dialog
+      width: 450px
 @media (max-width: 576px)
   .logo__image
     width: 99px
@@ -335,6 +345,9 @@
       order: 1
     &__copyrait
       margin-bottom: 10px
+  .modal
+    &__title
+      font-size: 14px
 @media (max-width: 480px)
   .footer
     &__social
@@ -347,6 +360,10 @@
     &__title
       &_inline
         flex: 0 1 100%
+  .modal
+    &-dialog
+      width: 340px
+      padding: 30px
 @media (max-width: 350px)
   .footer
     &__contact
@@ -354,6 +371,9 @@
       &-form
         grid-row: 7
         grid-column: 1 / 7
+  .modal
+    &-dialog
+      width: 300px
 @media (max-width: 320px)
   .footer
     &-wrapper

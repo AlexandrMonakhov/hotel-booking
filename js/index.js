@@ -74,7 +74,7 @@ $(document).ready(function () {
         },
         phone: {
           required: true,
-          minlength: 12
+          minlength: 17
         }
       },
       messages: {
@@ -88,7 +88,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Enter your phone number",
-          minlength: "The phone number must be at least 4 characters long"
+          minlength: "Please enter your full phone number"
         }
       }
     });

@@ -12,9 +12,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/jquery-3.5.1.min.js" defer></script>
     <script src="./js/swiper-bundle.min.js" defer></script>
     <script src="./js/index.js" defer></script>
+    <script src="./js/aos.js" defer></script>
+    <script src="./js/jquery.validate.min.js" defer></script>
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=dd827acf-6d16-40ff-8123-746827c2338c&lang=ru_RU"
       type="text/javascript"
@@ -41,13 +45,12 @@
               class="logo__image"
             />
           </a>
-
           <form
             action="#"
             class="search-form navbar__search navbar__search-mobile_hidden"
           >
             <input
-              type="text"
+              type="search"
               class="search-form__input"
               placeholder="Search Location"
             />
@@ -55,7 +58,6 @@
               <img src="./img/search-icon.svg" alt="Icon: search" />
             </button>
           </form>
-
           <a href="#" class="user navbar__user navbar__user-mobile_hidden">
             <img
               src="./img/user-avatar.jpg"
@@ -95,7 +97,7 @@
                 class="search-form navbar__search navbar__search-mobile_visible"
               >
                 <input
-                  type="text"
+                  type="search"
                   class="search-form__input"
                   placeholder="Search Location"
                 />
@@ -260,7 +262,7 @@
     <section class="package">
       <h2 class="package__title">Other packages</h2>
       <div class="container package-wrapper">
-        <div class="package-card package-card_big">
+        <div class="package-card package-card_big" data-aos="fade-right">
           <div
             class="package-card__image-wrapper package-card__image-wrapper_big"
             style="background-image: url('img/package-1.jpg')"
@@ -345,7 +347,7 @@
           <!-- /.package-card__property-wrapper -->
         </div>
         <!-- /.package-card package-card_big -->
-        <div class="package-card">
+        <div class="package-card" data-aos="fade-left">
           <div class="package-card__image-wrapper">
             <img
               class="package-card__img"
@@ -365,9 +367,9 @@
                 <svg class="icon map-pin-img">
                   <use xlink:href="./img/sprite.svg#map-pin"></use>
                 </svg>
-                <span class="package-card__info-text"
-                  >1749 Wheeler Ridge Delaware</span
-                >
+                <span class="package-card__info-text">
+                  1749 Wheeler Ridge Delaware
+                </span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
@@ -399,7 +401,7 @@
           <!-- /.package-card__property-wrapper -->
         </div>
         <!-- /.package-card -->
-        <div class="package-card">
+        <div class="package-card" data-aos="fade-right">
           <div class="package-card__image-wrapper">
             <img
               class="package-card__img"
@@ -419,9 +421,9 @@
                 <svg class="icon map-pin-img">
                   <use xlink:href="./img/sprite.svg#map-pin"></use>
                 </svg>
-                <span class="package-card__info-text"
-                  >1749 Wheeler Ridge Delaware</span
-                >
+                <span class="package-card__info-text">
+                  1749 Wheeler Ridge Delaware
+                </span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
@@ -453,7 +455,7 @@
           <!-- /.package-card__property-wrapper -->
         </div>
         <!-- /.package-card -->
-        <div class="package-card">
+        <div class="package-card" data-aos="fade-up">
           <div class="package-card__image-wrapper">
             <img
               class="package-card__img"
@@ -507,7 +509,7 @@
           <!-- /.package-card__property-wrapper -->
         </div>
         <!-- /.package-card -->
-        <div class="package-card">
+        <div class="package-card" data-aos="fade-left">
           <div class="package-card__image-wrapper">
             <img
               class="package-card__img"
@@ -527,9 +529,9 @@
                 <svg class="icon map-pin-img">
                   <use xlink:href="./img/sprite.svg#map-pin"></use>
                 </svg>
-                <span class="package-card__info-text"
-                  >1749 Wheeler Ridge Delaware</span
-                >
+                <span class="package-card__info-text">
+                  1749 Wheeler Ridge Delaware
+                </span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
@@ -574,13 +576,14 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -721,7 +724,7 @@
       <div class="container">
         <h2 class="activities__title">Other activities</h2>
         <div class="activities__card-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="zoom-in">
             <img
               class="card__image"
               src="./img/activity-1.jpg"
@@ -732,7 +735,7 @@
             <button class="button card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="zoom-in">
             <img
               class="card__image"
               src="./img/activity-2.jpg"
@@ -742,7 +745,7 @@
             <button class="button card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="zoom-in">
             <img
               class="card__image"
               src="./img/activity-3.jpg"
@@ -752,7 +755,7 @@
             <button class="button card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="zoom-in">
             <img
               class="card__image"
               src="./img/activity-4.jpg"
@@ -886,7 +889,9 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title_mb-3">Contact Details</h3>
+            <h3 class="footer__title footer__title_mb-3 footer__title_pt">
+              Contact Details
+            </h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -914,17 +919,21 @@
                   />
                 </div>
                 <div class="footer__link_wrapper">
-                  <a href="#" class="footer__link"
-                    >Tel (business hours) : 269 1500</a
-                  >
-                  <a href="#" class="footer__link"
-                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
-                    20:00 pm)</a
-                  >
+                  <span>
+                    Tel (business hours) :
+                    <a href="tel:2691500" class="footer__link"> 269 1500 </a>
+                  </span>
+                  <span>
+                    Tel (hotline) Monday - Saturday:
+                    <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                    (08:00 am – 20:00 pm)
+                  </span>
 
-                  <a href="#" class="footer__link"
-                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
-                  >
+                  <span>
+                    Tel (hotline) Sunday:
+                    <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                    (08:00 am – 14:00 pm)
+                  </span>
                 </div>
               </li>
 
@@ -936,26 +945,34 @@
                     alt="Icon: email"
                   />
                 </div>
-                <a href="#" class="footer__link">cherly.lawson@example.com</a>
+                <a href="mailto:cherly.lawson@example.com" class="footer__link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 cols="30"
@@ -1003,24 +1020,27 @@
           <img src="./img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title_mb-3">Send us a message</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             class="message modal__message"

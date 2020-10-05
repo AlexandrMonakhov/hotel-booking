@@ -17,13 +17,41 @@
     height: 220px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__copyrait
       margin-left: 80px
     &__title
       font-size: 15px
     &__item
       font-size: 13px
+@media (min-width: 992px)
+  .search-form
+    &__button
+      &:hover
+        background-color: darken($primary, 10)
+  .navbar-menu
+    &__link
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: -2px
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: #fff
+        transform: scaleX(0)
+        transition: ease 0.2s
+      &:hover::after
+        transform: scaleX(1)
+  .subscribe
+    &__button
+      &:hover
+        background-color: darken($primary, 10)
+  .button
+    &:hover
+      background-color: darken($primary, 10)
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -81,7 +109,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       &_wrapper
         grid-row: 1 / 2
@@ -262,7 +291,8 @@
     padding-top: 73px
     padding-bottom: 33px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__logo
       width: 104px 
   .modal
@@ -314,6 +344,7 @@
     &__legal
       grid-row: 5
       grid-column: 1
+      justify-self: start
     &__contact
       &-details
         grid-row: 6

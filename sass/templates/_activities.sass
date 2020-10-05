@@ -1,11 +1,12 @@
 .activities
-  padding: 60px 0 98px
+  padding: 42px 0 98px
   &__title
     font-weight: bold
     font-size: 24px
     line-height: 30px
     text-transform: uppercase
     color: #000
+    margin-top: 0
     margin-bottom: 57px
   &__card-wrapper
     display: flex    
@@ -29,6 +30,8 @@
     height: 100%
     top: 0
     right: 0
+    bottom: 0
+    left: 0
     z-index: -1
   &__image
     position: absolute
@@ -49,12 +52,14 @@
     margin-bottom: 18px
   &__button
     min-width: 100px
+    max-width: 100px
     font-family: 'Nunito', sans-serif
     color: $light
     background-color: $primary
-    padding: 7px 22px
+    padding: 7px 21px
     font-weight: 600
     font-size: 12px
     line-height: 16px
     border: none
     border-radius: 4px
+    word-break: break-all;

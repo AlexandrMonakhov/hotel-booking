@@ -85,5 +85,9 @@ $(document).ready(function () {
 
   AOS.init();
 
+  $('.phone-input').each(function () {
+    $(this).mask('+7 (000) 000-0000');
+  });
+
 });
 

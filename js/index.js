@@ -67,6 +67,16 @@ $(document).ready(function () {
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: {
+          required: true,
+          minlength: 12
+        }
+      },
       messages: {
         name: {
           required: "Please specify your name",
@@ -77,7 +87,8 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "Enter your phone number"
+          required: "Enter your phone number",
+          minlength: "The phone number must be at least 4 characters long"
         }
       }
     });

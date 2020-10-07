@@ -14,19 +14,6 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=dd827acf-6d16-40ff-8123-746827c2338c&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [55.76, 37.64],
-          zoom: 7,
-        });
-      }
-    </script>
     <title>Best Tour Plan | Hotel Booking</title>
   </head>
   <body>
@@ -35,7 +22,7 @@
         <div class="navbar-top">
           <a href="/" class="logo">
             <img
-              src="./img/horizontal-logo.svg"
+              src="./img/horizontal-logo.min.svg"
               alt="Logo: Best Plan Tour"
               class="logo__image"
             />
@@ -50,7 +37,7 @@
               placeholder="Search Location"
             />
             <button class="search-form__button">
-              <img src="./img/search-icon.svg" alt="Icon: search" />
+              <img src="./img/search-icon.min.svg" alt="Icon: search" />
             </button>
           </form>
           <a href="#" class="user navbar__user navbar__user-mobile_hidden">
@@ -97,7 +84,7 @@
                   placeholder="Search Location"
                 />
                 <button class="search-form__button">
-                  <img src="./img/search-icon.svg" alt="Icon: search" />
+                  <img src="./img/search-icon.min.svg" alt="Icon: search" />
                 </button>
               </form>
             </li>
@@ -136,11 +123,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="./img/star.svg" alt="star" />
-                <img src="./img/star.svg" alt="star" />
-                <img src="./img/star.svg" alt="star" />
-                <img src="./img/star.svg" alt="star" />
-                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.min.svg" alt="star" />
+                <img src="./img/star.min.svg" alt="star" />
+                <img src="./img/star.min.svg" alt="star" />
+                <img src="./img/star.min.svg" alt="star" />
+                <img src="./img/star.min.svg" alt="star" />
               </div>
               <h1 class="hotel-name hotel-info__name">Grand hilton hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -163,35 +150,35 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/728/470"
+                    src="./img/top-slider/top-slider-1.jpg"
                     alt="slider-image"
                     class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/727/470"
+                    src="./img/top-slider/top-slider-2.jpg"
                     alt="slider-image"
                     class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/729/470"
+                    src="./img/top-slider/top-slider-3.jpg"
                     alt="slider-image"
                     class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/728/471"
+                    src="./img/top-slider/top-slider-4.jpg"
                     alt="slider-image"
                     class="swiper-slide__image"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://picsum.photos/728/449"
+                    src="./img/top-slider/top-slider-5.jpg"
                     alt="slider-image"
                     class="swiper-slide__image"
                   />
@@ -215,7 +202,7 @@
                 <div class="booking__room">
                   <div class="booking__text">
                     <img
-                      src="./img/user.svg"
+                      src="./img/user.min.svg"
                       alt="Icon: user"
                       class="booking__icon"
                     />
@@ -223,7 +210,7 @@
                   </div>
                   <div class="booking__text">
                     <img
-                      src="./img/home.svg"
+                      src="./img/home.min.svg"
                       alt="Icon: home"
                       class="booking__icon"
                     />
@@ -235,7 +222,7 @@
               <div class="booking__call-center">
                 <span class="booking__heading">Quick booking</span>
                 <a href="tel:12100" class="booking__phone">
-                  <img src="./img/phone.svg" alt="Icon: phone" />
+                  <img src="./img/phone.min.svg" alt="Icon: phone" />
                   <span class="booking__number">12100</span>
                 </a>
               </div>
@@ -245,7 +232,18 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map"></div>
+            <div id="map" class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6756.836214464341!2d-80.75933774603268!3d32.139013715018514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98f2b586ea9394e7!2sGrand%20Hilton%20Head%20Inn%2C%20Ascend%20Hotel%20Collection!5e0!3m2!1sru!2sru!4v1602078805004!5m2!1sru!2sru"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
             <!-- /.map -->
           </div>
         </div>
@@ -273,19 +271,19 @@
             <div class="package-card__description">
               <div class="stars package-card__stars">
                 <svg class="stars__img">
-                  <use xlink:href="./img/sprite.svg#star"></use>
+                  <use xlink:href="./img/sprite.min.svg#star"></use>
                 </svg>
                 <svg class="stars__img">
-                  <use xlink:href="./img/sprite.svg#star"></use>
+                  <use xlink:href="./img/sprite.min.svg#star"></use>
                 </svg>
                 <svg class="stars__img">
-                  <use xlink:href="./img/sprite.svg#star"></use>
+                  <use xlink:href="./img/sprite.min.svg#star"></use>
                 </svg>
                 <svg class="stars__img">
-                  <use xlink:href="./img/sprite.svg#star"></use>
+                  <use xlink:href="./img/sprite.min.svg#star"></use>
                 </svg>
                 <svg class="stars__img">
-                  <use xlink:href="./img/sprite.svg#star"></use>
+                  <use xlink:href="./img/sprite.min.svg#star"></use>
                 </svg>
               </div>
               <!-- /.stars -->
@@ -306,7 +304,7 @@
             >
               <div class="package-card__info">
                 <svg class="icon map-pin-img">
-                  <use xlink:href="./img/sprite.svg#map-pin"></use>
+                  <use xlink:href="./img/sprite.min.svg#map-pin"></use>
                 </svg>
                 <span class="package-card__info-text"
                   >1749 Wheeler Ridge Delaware</span
@@ -315,14 +313,14 @@
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon user-img">
-                  <use xlink:href="./img/sprite.svg#user"></use>
+                  <use xlink:href="./img/sprite.min.svg#user"></use>
                 </svg>
                 <span class="package-card__info-text">2 x Guests</span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon room-img">
-                  <use xlink:href="./img/sprite.svg#room"></use>
+                  <use xlink:href="./img/sprite.min.svg#room"></use>
                 </svg>
                 <span class="package-card__info-text">1 x Room</span>
               </div>
@@ -360,7 +358,7 @@
             <div class="package-card__info-wrapper">
               <div class="package-card__info">
                 <svg class="icon map-pin-img">
-                  <use xlink:href="./img/sprite.svg#map-pin"></use>
+                  <use xlink:href="./img/sprite.min.svg#map-pin"></use>
                 </svg>
                 <span class="package-card__info-text">
                   1749 Wheeler Ridge Delaware
@@ -369,14 +367,14 @@
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon user-img">
-                  <use xlink:href="./img/sprite.svg#user"></use>
+                  <use xlink:href="./img/sprite.min.svg#user"></use>
                 </svg>
                 <span class="package-card__info-text">2 x Guests</span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon room-img">
-                  <use xlink:href="./img/sprite.svg#room"></use>
+                  <use xlink:href="./img/sprite.min.svg#room"></use>
                 </svg>
                 <span class="package-card__info-text">1 x Room</span>
               </div>
@@ -414,7 +412,7 @@
             <div class="package-card__info-wrapper">
               <div class="package-card__info">
                 <svg class="icon map-pin-img">
-                  <use xlink:href="./img/sprite.svg#map-pin"></use>
+                  <use xlink:href="./img/sprite.min.svg#map-pin"></use>
                 </svg>
                 <span class="package-card__info-text">
                   1749 Wheeler Ridge Delaware
@@ -423,14 +421,14 @@
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon user-img">
-                  <use xlink:href="./img/sprite.svg#user"></use>
+                  <use xlink:href="./img/sprite.min.svg#user"></use>
                 </svg>
                 <span class="package-card__info-text">2 x Guests</span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon room-img">
-                  <use xlink:href="./img/sprite.svg#room"></use>
+                  <use xlink:href="./img/sprite.min.svg#room"></use>
                 </svg>
                 <span class="package-card__info-text">1 x Room</span>
               </div>
@@ -468,7 +466,7 @@
             <div class="package-card__info-wrapper">
               <div class="package-card__info">
                 <svg class="icon map-pin-img">
-                  <use xlink:href="./img/sprite.svg#map-pin"></use>
+                  <use xlink:href="./img/sprite.min.svg#map-pin"></use>
                 </svg>
                 <span class="package-card__info-text"
                   >1749 Wheeler Ridge Delaware</span
@@ -477,14 +475,14 @@
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon user-img">
-                  <use xlink:href="./img/sprite.svg#user"></use>
+                  <use xlink:href="./img/sprite.min.svg#user"></use>
                 </svg>
                 <span class="package-card__info-text">2 x Guests</span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon room-img">
-                  <use xlink:href="./img/sprite.svg#room"></use>
+                  <use xlink:href="./img/sprite.min.svg#room"></use>
                 </svg>
                 <span class="package-card__info-text">1 x Room</span>
               </div>
@@ -522,7 +520,7 @@
             <div class="package-card__info-wrapper">
               <div class="package-card__info">
                 <svg class="icon map-pin-img">
-                  <use xlink:href="./img/sprite.svg#map-pin"></use>
+                  <use xlink:href="./img/sprite.min.svg#map-pin"></use>
                 </svg>
                 <span class="package-card__info-text">
                   1749 Wheeler Ridge Delaware
@@ -531,14 +529,14 @@
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon user-img">
-                  <use xlink:href="./img/sprite.svg#user"></use>
+                  <use xlink:href="./img/sprite.min.svg#user"></use>
                 </svg>
                 <span class="package-card__info-text">2 x Guests</span>
               </div>
               <!-- /.package-card__info -->
               <div class="package-card__info">
                 <svg class="icon room-img">
-                  <use xlink:href="./img/sprite.svg#room"></use>
+                  <use xlink:href="./img/sprite.min.svg#room"></use>
                 </svg>
                 <span class="package-card__info-text">1 x Room</span>
               </div>
@@ -601,11 +599,11 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="stars">
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
                   </div>
                 </div>
                 <p class="reviews-slider__text">
@@ -632,11 +630,11 @@
                   <h3 class="reviews-slider__username">Adriana Johnson</h3>
                   <span class="reviews-slider__date">Stayed 16 Dec, 2017</span>
                   <div class="stars">
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
                   </div>
                 </div>
                 <p class="reviews-slider__text">
@@ -658,11 +656,11 @@
                   <h3 class="reviews-slider__username">Steve Planton</h3>
                   <span class="reviews-slider__date">Stayed 26 Feb, 2018</span>
                   <div class="stars">
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
                   </div>
                 </div>
                 <p class="reviews-slider__text">
@@ -685,11 +683,11 @@
                   <h3 class="reviews-slider__username">Stephan Shmidt</h3>
                   <span class="reviews-slider__date">Stayed 22 June, 2019</span>
                   <div class="stars">
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
-                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
+                    <img src="./img/star.min.svg" alt="star" />
                   </div>
                 </div>
                 <p class="reviews-slider__text">
@@ -772,7 +770,7 @@
         <div class="footer-wrapper">
           <a href="/" class="footer__logo_wrapper">
             <img
-              src="./img/vertical-logo.svg"
+              src="./img/vertical-logo.min.svg"
               alt="Logo: Best Tour Plan"
               class="logo footer__logo"
             />
@@ -842,7 +840,7 @@
                 class="footer__link"
                 ><img
                   class="footer__link_hover"
-                  src="./img/fb.svg"
+                  src="./img/fb.min.svg"
                   alt="Icon: facebook"
               /></a>
               <a
@@ -851,7 +849,7 @@
                 class="footer__link"
                 ><img
                   class="footer__link_hover"
-                  src="./img/yt.svg"
+                  src="./img/yt.min.svg"
                   alt="Icon: youtube"
               /></a>
               <a
@@ -860,7 +858,7 @@
                 class="footer__link"
                 ><img
                   class="footer__link_hover"
-                  src="./img/inst.svg"
+                  src="./img/inst.min.svg"
                   alt="Icon: instagram"
               /></a>
             </div>
@@ -897,7 +895,7 @@
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
-                    src="./img/footer-map-point.svg"
+                    src="./img/footer-map-point.min.svg"
                     alt="Icon: map-marker"
                   />
                 </div>
@@ -911,7 +909,7 @@
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
-                    src="./img/footer-phone.svg"
+                    src="./img/footer-phone.min.svg"
                     alt="Icon: contact-phone-call"
                   />
                 </div>
@@ -938,7 +936,7 @@
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
-                    src="./img/footer-email.svg"
+                    src="./img/footer-email.min.svg"
                     alt="Icon: email"
                   />
                 </div>
@@ -1014,7 +1012,7 @@
       <!-- /.modal-overlay -->
       <div class="modal-dialog">
         <a href="javascript:void(0)" class="modal__close">
-          <img src="./img/close.svg" alt="Icon: close" />
+          <img src="./img/close.min.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title_mb-3">Send us a message</h3>
         <form action="send.php" method="POST" class="modal__form form">

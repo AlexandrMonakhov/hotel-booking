@@ -9,53 +9,37 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="font"
     />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
-    <script src="./js/swiper-bundle.min.js" defer></script>
     <script src="./js/index.js" defer></script>
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=dd827acf-6d16-40ff-8123-746827c2338c&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [55.76, 37.64],
-          zoom: 7,
-        });
-      }
-    </script>
     <title>Best Tour Plan | Hotel Booking</title>
   </head>
   <body>
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="/" class="logo">
+          <a href="./index.html" class="logo">
             <img
-              src="./img/horizontal-logo.svg"
+              src="./img/horizontal-logo.min.svg"
               alt="Logo: Best Plan Tour"
               class="logo__image"
             />
           </a>
-
           <form
             action="#"
             class="search-form navbar__search navbar__search-mobile_hidden"
           >
             <input
-              type="text"
+              type="search"
               class="search-form__input"
               placeholder="Search Location"
             />
             <button class="search-form__button">
-              <img src="./img/search-icon.svg" alt="Icon: search" />
+              <img src="./img/search-icon.min.svg" alt="Icon: search" />
             </button>
           </form>
-
           <a href="#" class="user navbar__user navbar__user-mobile_hidden">
             <img
               src="./img/user-avatar.jpg"
@@ -95,55 +79,46 @@
                 class="search-form navbar__search navbar__search-mobile_visible"
               >
                 <input
-                  type="text"
+                  type="search"
                   class="search-form__input"
                   placeholder="Search Location"
                 />
                 <button class="search-form__button">
-                  <img src="./img/search-icon.svg" alt="Icon: search" />
+                  <img src="./img/search-icon.min.svg" alt="Icon: search" />
                 </button>
               </form>
             </li>
-            <a href="#" class="navbar-menu__link">All Deals</a>
-            <a href="#" class="navbar-menu__link">Hotels</a>
-            <a href="#" class="navbar-menu__link">Activities</a>
-            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-            <a href="#" class="navbar-menu__link">Restaurants</a>
-            <a href="#" class="navbar-menu__link">Events</a>
-            <a href="#" class="navbar-menu__link">Rodrigues</a>
+            <li>
+              <a href="#" class="navbar-menu__link">All Deals</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-menu__link">Hotels</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-menu__link">Activities</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-menu__link">Restaurants</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-menu__link">Events</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-menu__link">Rodrigues</a>
+            </li>
           </ul>
         </div>
       </nav>
       <!-- /.navbar-menu -->
     </header>
     <!-- /.navbar -->
-    <nav class="breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-list__item">
-            <a href="#" class="breadcrumbs-list__link">Home</a>
-          </li>
-          <li class="breadcrumbs-list__item">
-            <a href="#" class="breadcrumbs-list__link">Flash Offers</a>
-          </li>
-          <li class="breadcrumbs-list__item">Grand Hilton Hotel</li>
-        </ul>
-      </div>
-      <!-- /.container -->
-    </nav>
-    <!-- /.breadcrumbs -->
-
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
-          <div class="hotel-info__text">
-            <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
-            </div>
-            <p class="hotel-description hotel-info__description">
-              Наш менеджер скоро свяжется с вами!)
-            </p>
-          </div>
+          <h1>Спасибо! С Вами скоро свяжется наш менеджер) Хорошего дня :)</h1>
         </div>
       </div>
       <!-- /.container -->
@@ -155,13 +130,15 @@
         <div class="footer-wrapper">
           <a href="/" class="footer__logo_wrapper">
             <img
-              src="./img/vertical-logo.svg"
+              src="./img/vertical-logo.min.svg"
               alt="Logo: Best Tour Plan"
               class="logo footer__logo"
             />
           </a>
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__categories-title">
+              ALL CATEGORIES
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals </a>
@@ -191,7 +168,9 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title footer__additional-title">
+              ADDITIONAL INFORMATION
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us</a>
@@ -225,7 +204,7 @@
                 class="footer__link"
                 ><img
                   class="footer__link_hover"
-                  src="./img/fb.svg"
+                  src="./img/fb.min.svg"
                   alt="Icon: facebook"
               /></a>
               <a
@@ -234,7 +213,7 @@
                 class="footer__link"
                 ><img
                   class="footer__link_hover"
-                  src="./img/yt.svg"
+                  src="./img/yt.min.svg"
                   alt="Icon: youtube"
               /></a>
               <a
@@ -243,7 +222,7 @@
                 class="footer__link"
                 ><img
                   class="footer__link_hover"
-                  src="./img/inst.svg"
+                  src="./img/inst.min.svg"
                   alt="Icon: instagram"
               /></a>
             </div>
@@ -251,7 +230,7 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
+            <h3 class="footer__title footer__legal-title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions </a>
@@ -269,16 +248,18 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title_mb-3">Contact Details</h3>
+            <h3 class="footer__title footer__title_mb footer__title_pt">
+              Contact Details
+            </h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item footer__item_mb-2">
+              <li class="footer__item footer__item_mb-2 footer__item_mb-mobile">
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
-                    src="./img/footer-map-point.svg"
+                    src="./img/footer-map-point.min.svg"
                     alt="Icon: map-marker"
                   />
                 </div>
@@ -288,59 +269,71 @@
                 >
               </li>
 
-              <li class="footer__item footer__item_mb-2">
+              <li class="footer__item footer__item_mb-2 footer__item_mb-mobile">
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
-                    src="./img/footer-phone.svg"
+                    src="./img/footer-phone.min.svg"
                     alt="Icon: contact-phone-call"
                   />
                 </div>
                 <div class="footer__link_wrapper">
-                  <a href="#" class="footer__link"
-                    >Tel (business hours) : 269 1500</a
-                  >
-                  <a href="#" class="footer__link"
-                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
-                    20:00 pm)</a
-                  >
+                  <span>
+                    Tel (business hours) :
+                    <a href="tel:2691500" class="footer__link"> 269 1500 </a>
+                  </span>
+                  <span>
+                    Tel (hotline) Monday - Saturday:
+                    <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                    (08:00 am – 20:00 pm)
+                  </span>
 
-                  <a href="#" class="footer__link"
-                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
-                  >
+                  <span>
+                    Tel (hotline) Sunday:
+                    <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                    (08:00 am – 14:00 pm)
+                  </span>
                 </div>
               </li>
 
-              <li class="footer__item footer__item_mb-2">
+              <li class="footer__item footer__item_mb-2 footer__item_mb-mobile">
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
-                    src="./img/footer-email.svg"
+                    src="./img/footer-email.min.svg"
                     alt="Icon: email"
                   />
                 </div>
-                <a href="#" class="footer__link">cherly.lawson@example.com</a>
+                <a href="mailto:cherly.lawson@example.com" class="footer__link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <h3 class="footer__title footer__title-form">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone-input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"

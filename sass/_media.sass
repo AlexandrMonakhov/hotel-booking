@@ -173,6 +173,58 @@
       margin-top: 10px
     &-dialog
       padding: 33px 50px
+@media (max-width: 770px)
+  .breadcrumbs
+    &-list
+      padding: 10px 0
+  .hotel
+    &-info
+      &__offer
+        margin-left: 12px
+        margin-top: 12px
+    &-name
+      margin-top: 14px
+  .activities
+    padding: 42px 0 98px
+  .footer
+    padding-top: 0px
+    &__bottom
+      grid-column: 1 / 13
+    &__text
+      margin-bottom: 30px
+    &__title
+      font-size: 18px
+      &-form
+        margin-bottom: 27px
+      &_pt
+        padding-top: 40px
+    &-wrapper
+      grid-template-columns: repeat(12, 1fr)
+    &__social
+      &-network
+        padding-top: 40px
+        padding-left: 6px
+        grid-column: 4 / -1
+    &__categories
+      grid-column: span 3
+      &-title
+        padding-top: 7px
+    &__additional
+      grid-column: span 5
+      padding-left: 20px
+      &-title
+        padding-top: 7px
+    &__legal
+      grid-column: span 4
+      justify-self: start
+      padding-left: 17px
+      &-title
+        padding-top: 7px
+    &__contact
+      &-form
+        grid-column: span 9
+      &-details
+        grid-column: span 8
 @media (max-width: 767px)
   body 
     padding-top: 78px
@@ -373,10 +425,11 @@
     &__social
       &-network
         grid-row: 2
-        grid-column: 1
+        grid-column: 1 / 7
     &__additional
       grid-row: 3
       grid-column: 1
+      padding-left: 0
     &__categories
       grid-row: 4
       grid-column: 1
@@ -384,6 +437,7 @@
       grid-row: 5
       grid-column: 1
       justify-self: start
+      padding-left: 0
     &__contact
       &-details
         grid-row: 6
@@ -433,22 +487,10 @@
   .modal
     &-dialog
       width: 340px
-      padding: 30px
-@media (max-width: 350px)
-  .footer
-    &__contact
-      &-details
-      &-form
-        grid-row: 7
-        grid-column: 1 / 7
-  .modal
-    &__message
-      min-height: unset
-      height: 90px
-    &-dialog
-      width: 300px
-@media (max-width: 320px)
+      padding: 30px  
+@media (max-width: 360px)
   .hotel
+    padding-top: 0
     &__slider
       height: 179px
     &-info
@@ -461,6 +503,10 @@
     padding-bottom: 45px
   .footer
     padding-top: 26px
+    &__item
+      &_mb
+        &-mobile
+          margin-bottom: 30px
     &__logo
       padding-top: 10px
       
@@ -469,16 +515,19 @@
         padding-top: 0
         margin-bottom: 14px
       &_pt
-        padding-top: 0
+        padding-top: 11px
     &-wrapper
       grid-gap: 10px
     &__contact
       &-details
+        grid-column: 1 / 13
       &-form
+        margin-top: 17px
+        padding-left: 0
         grid-row: 7
-        grid-column: 1 / 7
+        grid-column: 1 / 13
     &__copyrait
-      width: 290px
+      width: 272px
       margin-top: 15px
     &__button
       margin-top: 15px
@@ -486,17 +535,32 @@
       margin: 0
     &__additional
       margin-top: 30px
+      grid-column: 1 / 10
+      grid-row: 4
+      &-title
+        padding-top: 0px
     &__categories
       margin-top: 30px
+      grid-row: 5
+      &-title
+        padding-top: 0px
     &__social
       &-links
         margin-top: 20px
       &-network
-        margin-top: 30px
+        margin-top: 0px
+        padding-top: 25px
+        grid-column: 1 / 8
     &__legal
-      margin-top: 30px
+      margin-top: 10px
+      grid-column: 1 / 7
+      grid-row: 3
     &__contact
       &-details
         margin-top: 40px
-      &-form
-        margin-top: 53px
+  .modal
+    &__message
+      min-height: unset
+      height: 90px
+    &-dialog
+      width: 300px

@@ -173,7 +173,8 @@
     &__box
       flex-direction: column
     &__info
-      margin-top: 10px
+      order: -1
+      margin-bottom: 10px
     &-dialog
       padding: 33px 50px
 @media (max-width: 770px)
@@ -197,6 +198,8 @@
     padding-top: 17px
   .slider
     height: 447px
+    &-button
+      top: 47%
   .booking
     padding: 30px 24px 24px 24px
     &__pricetag 
@@ -552,11 +555,14 @@
     margin-bottom: 50px
   .booking
     padding: 23px 30px 23px 24px
+    &__pricetag
+      font-size: 24px
     &__text
       &:nth-child(1)
         padding-top: 5px
   .newsletter
     &__title
+      padding-top: 4px
       padding-left: 6px
   .subscribe
     width: 98%
@@ -575,7 +581,7 @@
         left: 19px
   .hotel
     padding-top: 0
-    padding-bottom: 30px
+    padding-bottom: 10px
     &__slider
       height: 179px
     &-info
@@ -583,7 +589,6 @@
         margin-top: 7px
         margin-left: 5px
       &__description
-        max-width: 80%
         margin-bottom: 30px
   .user__name_light
     margin-left: 0
@@ -597,12 +602,17 @@
     padding-bottom: 45px
     &__card
       &_ordered-second, &_ordered-third
-        padding: 26px 24px 15px 30px
+        padding: 26px 24px 18px 30px
+  .card
+    &__title
+      max-width: 200px
   .reviews
+    padding: 39px 0 56px 0
     &-slider
       &__text
         padding-left: 7px
         padding-top: 14px
+        text-align: left
       &__avatar
         margin-bottom: 6px
       &__button
@@ -613,6 +623,12 @@
           margin-right: -87px
   .footer
     padding-top: 26px
+    &__list
+      padding-top: 0
+    &-wrapper
+      padding-top: 0
+    &__logo
+      width: 100px
     &__ul
       padding-left: 6px
     &__icon
@@ -631,14 +647,15 @@
       padding-top: 10px
     &__title
       &-form
-        padding-top: 4px
+        padding-top: 0
         margin-bottom: 14px
       &_pt
-        padding-top: 11px
+        padding-top: 17px
     &-wrapper
       grid-gap: 10px
     &__contact
       &-details
+        margin-top: 36px
         grid-column: 1 / 13
       &-form
         margin-top: 17px
@@ -674,9 +691,6 @@
       margin-top: 10px
       grid-column: 1 / 7
       grid-row: 3
-    &__contact
-      &-details
-        margin-top: 40px
   .modal
     &__info
       margin-bottom: 10px
